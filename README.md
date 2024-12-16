@@ -146,5 +146,10 @@ You are free to use, modify, and distribute this project with proper attribution
 ![Screenshot (119)](https://github.com/user-attachments/assets/c3c35701-290a-4fc1-922b-ffab17d36f92)
 
 --- 
+## **Contributors**
+
+Thanks to the following people for contributing to this project:
+
+- Ariharan K C(https://github.com/ARIHARAN-KC) - Creator
 
 Feel free to adapt this `README.md` further to reflect specific project details, like adding links to deployed versions or additional features.
