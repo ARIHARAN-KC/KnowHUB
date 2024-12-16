@@ -148,7 +148,7 @@ You are free to use, modify, and distribute this project with proper attribution
 --- 
 ## **Contributors**
 
-Thanks to the following people for contributing to this project:
+Contributing to this project:
 
 - Ariharan K C(https://github.com/ARIHARAN-KC) - Creator
 
