@@ -1,0 +1,34 @@
+.campus{
+    margin: 80px auto;
+    width: 90%;
+    text-align: center;
+}
+.gallery{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.gallery img{
+    width: 23%;
+    border-radius: 10px;
+}
+/* Responsive styling for .campus section */
+@media(max-width: 768px) {
+    .campus {
+        margin: 40px auto; /* Reduce vertical margin for smaller screens */
+        width: 95%; /* Utilize more screen space */
+        text-align: center;
+    }
+
+    .gallery {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center align images */
+        margin-bottom: 20px; /* Reduce bottom margin */
+    }
+
+    .gallery img {
+        width: 90%; /* Set image width to take up most of the screen */
+        margin-bottom: 15px; /* Add spacing between images */
+    }
+}

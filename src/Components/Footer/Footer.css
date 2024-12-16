@@ -1,0 +1,31 @@
+.footer{
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #797979;
+    padding: 15px 0;
+}
+.footer ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+/* Responsive styling for .footer */
+@media(max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center align text and items */
+        padding: 20px 10px; /* Adjust padding for mobile screens */
+    }
+
+    .footer ul {
+        padding: 0;
+        margin: 10px 0; /* Add spacing between sections */
+    }
+
+    .footer ul li {
+        margin: 10px 5px; /* Reduce margin for list items */
+        display: block; /* Display items as block for better spacing */
+    }
+}

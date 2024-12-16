@@ -1,0 +1,93 @@
+.contact{
+    margin: 80px auto;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-col{
+    flex-basis: 48%;
+    color: #676767;
+}
+.contact-col h3{
+    color: #000F38;
+    font-weight: 500;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.contact-col h3 img{
+    width: 35px;
+    margin-left: 10px;
+}
+.contact-col p{
+    max-width: 450px;
+    line-height: 1.3;
+}
+.contact-col ul li{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.contact-col ul li img{
+    width: 25px;
+    margin-right: 10px;
+}
+.contact form input, .contact form textarea{
+    display: block;
+    width: 100%;
+    background: #EBFCFE;
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    resize: none;
+}
+.contact-col span{
+    display: block;
+    margin: 20px 0;
+}
+/* Responsive styling for .contact section */
+@media(max-width: 768px) {
+    .contact {
+        flex-direction: column; /* Stack columns vertically */
+        align-items: flex-start; /* Align items to the start */
+        margin: 40px auto; /* Adjust margin for smaller screens */
+    }
+
+    .contact-col {
+        flex-basis: 100%; /* Take full width */
+        margin-bottom: 30px; /* Add spacing between columns */
+    }
+
+    .contact-col h3 {
+        font-size: 20px; /* Reduce font size for smaller screens */
+    }
+
+    .contact-col h3 img {
+        width: 25px; /* Adjust icon size */
+        margin-left: 5px;
+    }
+
+    .contact-col p {
+        max-width: 100%; /* Allow paragraph to expand full width */
+        font-size: 14px; /* Adjust text size */
+    }
+
+    .contact-col ul li {
+        margin: 15px 0; /* Adjust spacing between list items */
+    }
+
+    .contact form input, 
+    .contact form textarea {
+        padding: 12px; /* Reduce padding for better fit */
+        font-size: 14px; /* Adjust input font size */
+    }
+
+    .contact-col span {
+        margin: 15px 0; /* Reduce spacing for a compact layout */
+    }
+}
+

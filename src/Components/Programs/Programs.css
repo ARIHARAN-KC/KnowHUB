@@ -1,0 +1,68 @@
+.programs{
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.program img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+.program{
+    flex-basis: 31%;
+    position: relative;
+}
+.caption{
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 15,152,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0;
+    padding-top: 70%;
+    transition: 0.4s;
+}
+.caption img{
+    width: 60px;
+    margin-bottom: 10px;
+}
+.program:hover .caption{
+    opacity: 1;
+    padding-top: 0;
+}
+/* Responsive styling for .programs section */
+@media(max-width: 768px) {
+    .programs {
+        flex-direction: column; /* Stack programs vertically */
+        align-items: center; /* Center align the programs */
+        margin: 40px auto; /* Reduce vertical margin */
+    }
+
+    .program {
+        flex-basis: 100%; /* Full width for each program */
+        margin-bottom: 20px; /* Add spacing between programs */
+    }
+
+    .program img {
+        width: 100%; /* Ensure images scale properly */
+    }
+
+    .caption {
+        padding-top: 50%; /* Adjust padding for smaller screens */
+    }
+
+    .caption img {
+        width: 40px; /* Reduce icon size for better fit */
+        margin-bottom: 5px; /* Adjust spacing */
+    }
+}

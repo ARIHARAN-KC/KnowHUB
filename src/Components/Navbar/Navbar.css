@@ -1,0 +1,75 @@
+    nav{
+        width: 100%;
+    /* background: #333;*/
+        color: #fff;
+        padding: 4px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 10;
+    }
+    .logo{
+        width: 180px;
+    }
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 5px 20px;
+        font-size: 16px;
+    }
+    .container{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .dark-nav{
+        background: linear-gradient(90deg, #4f6ffe, #00f2fe);
+        transition: 0.5s;
+    }
+
+    /* ---media query ----- */
+
+/* Responsive styling for mobile screens */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack items vertically */
+        padding: 10px;
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .logo {
+        width: 120px; /* Reduce logo size */
+    }
+
+    nav ul {
+        width: 100%; /* Make the navigation take full width */
+        display: none; /* Hide the navigation links by default */
+        flex-direction: column; /* Stack navigation items */
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add vertical spacing for items */
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .container {
+        padding-left: 5%; /* Reduce padding for smaller screens */
+        padding-right: 5%;
+    }
+
+    /* Hamburger menu style */
+    .hamburger {
+        font-size: 30px;
+        cursor: pointer;
+        display: block; /* Show the hamburger on mobile */
+    }
+}
+
+/* When the nav is open, show the links */
+.nav-open {
+    display: flex; /* Show the navigation links */
+}
